@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selfwork Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top navbar-expand-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="#"><img src="./media/Logo.png" alt="logo" class="logo"></a>
+            <button class="navbar-toggler text-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" aria-current="page" href="#">Film</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="#">Orari</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning" href="#">Dove siamo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- Header -->
+        <header class="bg-secondary d-flex justify-content-center align-items-center">
+            <h1 class="display-1 text-warning">Fullstack Cinema</h1>
+        </header>
+        
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-sm d-flex justify-content-center py-3">
+                    <!-- Card 1 -->
+                    <div class="card" style="width: 18rem;">
+                        <a href="https://www.rottentomatoes.com/m/marvels_the_avengers" target="_blank"><img src="./media/Avengers.jpg" class="card-img-top" alt="Avengers">
+                            <div class="card-body"></a>
+                                <h5 class="card-title">Avengers</h5>
+                                <p class="card-text">Iron Man, Thor, Capitan America, Vedova Nera e Occhio di Falco uniti per affrontare Thanos.</p>
+                                <a href="#" class="btn btn-custom bg-warning">Prenota ora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-sm d-flex justify-content-center py-3">
+                        <div class="card" style="width: 18rem;">
+                            <a href="https://www.rottentomatoes.com/m/harry_potter_and_the_sorcerers_stone" target="_blank"><img src="./media/Harry Potter.jpg" class="card-img-top" alt="Harry Potter"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Harry Potter</h5>
+                                <p class="card-text">Harry Potter riceve una lettera per una scuola di magia e scopre che i suoi genitori facevano parte di un ordine magico.</p>
+                                <a href="#" class="btn btn-custom bg-warning">Prenota ora</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-sm d-flex justify-content-center py-3">
+                        <div class="card" style="width: 18rem;">
+                            <a href="https://www.rottentomatoes.com/m/it_chapter_two" target="_blank"><img src="./media/IT.jpg" class="card-img-top" alt="IT Capitolo 2"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">IT - Capitolo 2</h5>
+                                <p class="card-text">I quattro giovani protagonisti di It sono chiamati nuovamente a confrontarsi con la peggiore delle loro paure: Pennywise.</p>
+                                <a href="#" class="btn btn-custom bg-warning">Prenota ora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Carousel -->
+        <section class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./media/film-1.jpg" class="d-block w-100" alt="film-1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./media/film-2.png" class="d-block w-100" alt="film-2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./media/film-3.jpg" class="d-block w-100" alt="film-3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section Form -->
+        <section class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-12 text-warning text-center mb-2">
+                    <h2>Lavora con noi</h2>
+                </div>
+                <div class="col-10 col-md-8 col-lg-6">
+                    <form class="bg-secondary p-4 rounded-4">
+                        <div class="mb-3 text-white">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3 text-white">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#modalWork">Invia</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Accordion -->
+
+        <section class="container my-3 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 text-warning text-center mb-2">
+                    <h2>FAQ</h2>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button text-white bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              QUANTO COSTA IL BIGLIETTO?
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-white bg-secondary">
+                                La tariffa del biglietto può variare a seconda del cinema, del film, del formato (2D, 3D), del giorno o dell’orario dello spettacolo scelto, della posizione in sala (esempio: poltrone VIP), del canale di acquisto (online, al cinema) o di eventuali scontistiche disponibili.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-white bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                COME POSSO CANCELLARE IL MIO ACCOUNT?
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-white bg-secondary">
+                                Per eliminare il proprio account bisogna effettuare il Log In sul sito, entrare nella sezione ‘il mio account’, cliccare su ‘I miei dati’. A fondo pagina c’è la sezione che consente di cancellare l’account con un click.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed text-white bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                POSTI PER PERSONE CON DISABILITA'
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-white bg-secondary">
+                                Alle persone disabili in carrozzina viene riconosciuto un ingresso omaggio, anche per l'eventuale accompagnatore.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="d-flex justify-content-around pt-3 bg-dark text-light">
+            <section>
+                <h5>P.IVA</h5>
+                <p>1234567890</p>
+            </section>
+            <section>
+                <h5>Chi siamo</h5>
+                <p>Scopri di più!</p>
+            </section>
+            <section>
+                <h5>Social</h5>
+                <ul>
+                    <li><i class="bi bi-facebook"></i>Facebook</li>
+                    <li><i class="bi bi-instagram"></i>Instagram</li>
+                    <li><i class="bi bi-twitter-x"></i>Twitter-X</li>
+                    <li><i class="bi bi-youtube"></i>YouTube</li>
+                </ul>
+            </section>
+        </footer>
+        
+        <!-- Modal-1 -->
+        <div class="modal fade" id="modalWork" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content" id="modal">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Grazie per averci contattato!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Abbiamo inviato una mail alla tua posta elettronica.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    </html>
